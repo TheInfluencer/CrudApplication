@@ -14,6 +14,24 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	.outer_div{
+	 margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+	}
+	.links_div{
+	 margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    
+	}
+	h1{
+	text-align:center;
+	}
+	</style>
 </head>
 <body>
 	<h1>Add New Employee</h1>
@@ -34,7 +52,7 @@
 <span class="glyphicon glyphicon-plus"></span> Add</button></td></tr>
 </table>
 </form>  -->
-
+<div class="outer_div">
 	<form action="SaveServlet" method="post">
 		<div class="form-group">
 			<label for="email">Name:</label> <input type="text"
@@ -62,8 +80,14 @@
 <button class="btn btn-primary btn-sm" class="btn btn-default btn-sm" value="Save Employee">
 <span class="glyphicon glyphicon-plus"></span> Add</button>
 	</form>
-
-	<br />
-	<a href="ViewServlet">view employees</a>
+</div><br>
+<div class="links_div">
+<br/>
+    <h4>Suggested Links</h4>
+    <marquee behavior="scroll" direction="right">
+	<a href="ViewServlet">view employees</a></marquee>
+	
+</div>
+	
 </body>
 </html>
