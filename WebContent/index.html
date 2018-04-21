@@ -4,17 +4,20 @@
 <meta charset="ISO-8859-1">
 <title>CRUD</title>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Add New Employee</h1>
-<form action="SaveServlet" method="post">
+	<h1>Add New Employee</h1>
+	<!--  <form action="SaveServlet" method="post">
 <table>
 <tr><td>Name:</td><td><input type="text" name="name" placeholder="Enter name"/></td></tr>
 <tr><td>Password:</td><td><input type="password" name="password" placeholder="Enter Password"/></td></tr>
@@ -30,9 +33,37 @@
 <tr><td colspan="2"><button class="btn btn-primary btn-sm" class="btn btn-default btn-sm" value="Save Employee">
 <span class="glyphicon glyphicon-plus"></span> Add</button></td></tr>
 </table>
-</form>
+</form>  -->
 
-<br/>
-<a href="ViewServlet">view employees</a>
+	<form action="SaveServlet" method="post">
+		<div class="form-group">
+			<label for="email">Name:</label> <input type="text"
+				class="form-control" id="email" placeholder="Enter name" name="name">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password:</label> <input type="password"
+				class="form-control" id="pwd" placeholder="Enter password"
+				name="password">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Email:</label> <input type="email"
+				class="form-control" id="pwd" placeholder="Enter email" name="email">
+		</div>
+		<div class="form-group">
+			<label for="pwd">Country:</label> 
+			<select name="country"
+				style="width: 150px">
+				<option>India</option>
+				<option>USA</option>
+				<option>UK</option>
+				<option>Other</option>
+			</select>
+		</div>
+<button class="btn btn-primary btn-sm" class="btn btn-default btn-sm" value="Save Employee">
+<span class="glyphicon glyphicon-plus"></span> Add</button>
+	</form>
+
+	<br />
+	<a href="ViewServlet">view employees</a>
 </body>
 </html>
